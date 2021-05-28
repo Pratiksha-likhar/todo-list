@@ -1,0 +1,29 @@
+div {
+  color: aliceblue;
+}
+
+li {
+  background-color: aliceblue;
+  color: black;
+  width: 30%;
+  height: 25px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.task-check {
+  margin-left: -250px;
+}
+
+.add-btn {
+  background-color: teal;
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.del-btn {
+  background-color: red;
+  color: white;
+  align-items: flex-end;
+  margin-right: -200px;
+}
