@@ -11,6 +11,7 @@ import { Todo } from "./todo";
 export class AppComponent {
   title = 'todo-list';
   getTask = '';
+  editedTask = '';
   errorMessage = '';
   list : Todo[] = [];
 
@@ -31,6 +32,14 @@ export class AppComponent {
 
   deleteTask(id:number) {
     this.list = this.list.filter(item => item.id != id);
+  }
+
+  editTask(taskNo:Todo) {
+     let result = prompt("Edit the task", taskNo.taskValue);
+     let index = this.list.indexOf(taskNo);
+     if(result !== null && result !== '') {
+      this.list[index].taskValue = result;
+     }
   }
 
 }
